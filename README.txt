@@ -26,11 +26,11 @@ Transports
     http  — HTTP GET /metrics
     grpc  — gRPC with protobuf serialization
 
-Quick start — Server (Linux only)
----------------------------------
+Quick start — Server (Linux)
+------------------------------
   Prerequisite: JDK 21 or later on your PATH.
 
-    ./monitor-server.sh -P tcp -p 2019 -e
+    ./monitor-server.sh -P udp -p 2019 -e
 
   Options:
     -P udp|tcp|http|grpc    Transport (required)
@@ -40,15 +40,15 @@ Quick start — Server (Linux only)
   If 'java' is not on your PATH, edit jmonitor-server.ini and
   set JAVA_HOME to your JDK installation directory.
 
-Quick start — GUI client (Linux / Mac / Windows)
--------------------------------------------------
+Quick start — GUI client (Linux / macOS / Windows)
+---------------------------------------------------
   Prerequisite: JDK 21 or later on your PATH.
 
-  Linux/Mac:
-    ./monitor-client.sh -h <server-host> -p 2019 -P tcp
+  Linux/macOS:
+    ./monitor-client.sh -h <host> -p 2019 -P udp
 
   Windows:
-    monitor-client.bat -h <server-host> -p 2019 -P tcp
+    .\monitor-client.bat -h <host> -p 2019 -P udp
 
   If 'java' is not on your PATH, edit monitor_client.ini and
   set JAVA_HOME to your JDK 21 installation directory.
