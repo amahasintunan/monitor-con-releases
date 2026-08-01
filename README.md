@@ -48,14 +48,4 @@ Prerequisite: JDK 21+
 .\monitor-client.bat -h <host> -p 2019 -P udp
 ```
 
-## Build from source
 
-```bash
-git clone https://github.com/amahasintunan/monitor-con.git
-cd monitor-con/jserver && ./build.sh              # Java server
-cd monitor-con/jclient-gui && mvn clean package   # Java GUI
-```
-
-## More info
-
-https://github.com/amahasintunan/monitor-con
