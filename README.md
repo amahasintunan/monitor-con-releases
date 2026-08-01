@@ -1,8 +1,8 @@
 # monitor-con v2.0 — Linux Performance Monitor
 
-A consolidated Linux system monitor that collects CPU, Memory, Network, and Disk metrics from `/proc` and serves them over the network. Built entirely in Java — server and GUI client.
+A consolidated Linux system monitor that collects CPU, Memory, and Network metrics from `/proc` and serves them over the network. Built entirely in Java — server and GUI client.
 
-![GUI client showing real-time CPU, Memory, Network, and Disk metrics](screenshot.png)
+![GUI client showing real-time CPU, Memory, and Network metrics](screenshot.png)
 
 ## What's in this package
 
